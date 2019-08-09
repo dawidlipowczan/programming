@@ -1,0 +1,17 @@
+
+    <div>
+        <input [(ngModel)] = "newTask" (keydown.space)="add()">
+        <!--<button (click)="add()">dodaj 1 litere</button>-->
+        <button  id="button1" (click)="randomLetter()">litery</button>
+        <button (click)=timeCounter()>zrobione</button>
+        {{score}}
+    </div>
+    <div id="list">
+         <button *ngFor="let element of lettersOnScreen">{{element}}</button>
+    </div>
+    <br><br><br><br>
+    <div id="letter">
+         <button *ngFor="let task of tablica">{{task}}</button>
+    </div>
+    <!--<input (keydown.space)="add()">-->
+    
